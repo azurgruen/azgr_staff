@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-09-08T13:54:56Z" product-name="azgr_staff">
+		<header/>
+		<body>
+			<trans-unit id="first_name.description">
+				<source>firstName</source>
+			</trans-unit>
+			<trans-unit id="last_name.description">
+				<source>lastName</source>
+			</trans-unit>
+			<trans-unit id="jobtitle.description">
+				<source>jobtitle</source>
+			</trans-unit>
+			<trans-unit id="phone.description">
+				<source>phone</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="profile_picture.description">
+				<source>profilePicture</source>
+			</trans-unit>
+			<trans-unit id="staff.description">
+				<source>staff</source>
+			</trans-unit>
+			<trans-unit id="department.description">
+				<source>department</source>
+			</trans-unit>
+			<trans-unit id="job_title.description">
+				<source>jobTitle</source>
+			</trans-unit>
+			<trans-unit id="last_name.jobtitle">
+				<source>jobtitle</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

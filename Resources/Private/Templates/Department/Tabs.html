@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:for each="{departments}" as="department">
+	<h1>{department.name}</h1>
+	<f:for each="{department.member}" as="member">
+		<f:if condition="{member}">asd</f:if>
+		<div class="member">{member.firstName} {member.lastName}</div>
+	</f:for>
+</f:for>
+
+</f:section>

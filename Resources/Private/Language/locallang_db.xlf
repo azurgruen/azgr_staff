@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-09-08T13:54:56Z" product-name="azgr_staff">
+		<header/>
+		<body>
+			<trans-unit id="tx_azgrstaff_domain_model_staff">
+				<source>Team</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_staff.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_staff.phone_base">
+				<source>Telefon (ohne Durchwahl)</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_staff.mail_domain">
+				<source>Mail-Domain</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member">
+				<source>Mitarbeiter</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.first_name">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.last_name">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.jobtitle">
+				<source>Berufsbezeichnung</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.phone">
+				<source>Telefon (nur Durchwahl, falls Team-Nummer vorhanden)</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.email">
+				<source>E-Mail (nur Lokalteil, falls Team-Maildomain vorhanden)</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.profile_picture">
+				<source>Profilbild</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.staff">
+				<source>Team</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.department">
+				<source>Abteilung</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_department">
+				<source>Abteilung</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_department.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_department.staff">
+				<source>Team</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_department.member">
+				<source>Member</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_staff.department">
+				<source>Department</source>
+			</trans-unit>
+			<trans-unit id="tx_azgrstaff_domain_model_member.jobitle">
+				<source>Berufsbezeichnung</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

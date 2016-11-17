@@ -1,0 +1,83 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Anzeige</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Liste Mitarbeiter</numIndex>
+										<numIndex index="1">Member->list</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Liste Abteilungen</numIndex>
+										<numIndex index="1">Department->list</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">Liste Abteilungen inkl. Mitarbeiter (Tabs)</numIndex>
+										<numIndex index="1">Department->tabs</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+					<settings.staff>
+						<TCEforms>
+							<label>Gruppe</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Alle Teams</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+								</items>
+								<foreign_table>tx_azgrstaff_domain_model_staff</foreign_table>
+								<foreign_table_where>ORDER BY name</foreign_table_where>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+							</config>
+						</TCEforms>
+					</settings.staff>
+<!--
+					<settings.department>
+						<TCEforms>
+							<label>Abteilung</label>
+							<displayCond>
+								<OR>
+									<numIndex index="0">FIELD:switchableControllerActions:=:Member->list</numIndex>
+									<numIndex index="1">FIELD:switchableControllerActions:=:Department->tabs</numIndex>
+								</OR>
+								<AND>
+									<numIndex index="0">FIELD:settings.staff:>:0</numIndex>
+								</AND>
+							</displayCond>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Alle Abteilungen</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+								</items>
+								<foreign_table>tx_azgrstaff_domain_model_department</foreign_table>
+								<foreign_table_where>ORDER BY name</foreign_table_where>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+							</config>
+						</TCEforms>
+					</settings.department>
+-->
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,61 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:flashMessages />
+
+<div class="staff">
+	<f:debug>{members}</f:debug>
+	<f:for each="{members}" as="member">
+		<div>
+			<span>{member.firstName}</span>
+			
+			<f:if condition="{member.department}">
+				<span>
+				<f:for each="{member.department}" as="department" iteration="iterator">
+					{department.name}<f:if condition="{iterator.cycle}<{iterator.total}">,</f:if>
+				</f:for>
+				</span>
+			</f:if>
+			
+			<f:if condition="{member.staff.phoneBase}">
+				<f:then>
+					<f:if condition="{member.phone}">
+						<span>{member.staff.phoneBase}{member.phone}</span>
+					</f:if>
+				</f:then>
+				<f:else>
+					<f:if condition="{member.phone}">
+						<span>{member.phone}</span>
+					</f:if>
+				</f:else>
+			</f:if>
+			
+			<f:if condition="{member.staff.mailDomain}">
+				<f:then>
+					<f:if condition="{member.email}">
+						<span>{member.email}@{member.staff.mailDomain}</span>
+					</f:if>
+				</f:then>
+				<f:else>
+					<f:if condition="{member.email}">
+						<span>{member.email}</span>
+					</f:if>
+				</f:else>
+			</f:if>
+			
+			<f:if condition="{member.profilePicture}">
+				<f:then>
+					<f:image src="{member.profilePicture.uid}" treatIdAsReference="true" />
+				</f:then>
+				<f:else>
+					<f:image src="{settings.dummyProfileImage}" />
+				</f:else>
+			</f:if>
+		</div>
+	</f:for>
+</div>
+
+</f:section>
+</html>

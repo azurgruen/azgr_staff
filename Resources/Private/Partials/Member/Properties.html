@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-azgr-staff" >
+	<tr>
+		<td>
+			<f:translate key="tx_azgrstaff_domain_model_member.first_name" />
+		</td>
+		<td>
+		{member.firstName}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_azgrstaff_domain_model_member.last_name" />
+		</td>
+		<td>
+		{member.lastName}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_azgrstaff_domain_model_member.jobtitle" />
+		</td>
+		<td>
+		{member.jobtitle}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_azgrstaff_domain_model_member.phone" />
+		</td>
+		<td>
+		{member.phone}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_azgrstaff_domain_model_member.email" />
+		</td>
+		<td>
+		{member.email}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_azgrstaff_domain_model_member.profile_picture" />
+		</td>
+		<td>
+				<f:image src="{member.profilePicture.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+</table>
+</html>
